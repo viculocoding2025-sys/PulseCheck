@@ -6,11 +6,13 @@ const translations ={
         'works' : 'نحوه کار' ,
         'pricing' : 'قیمت گذاری' ,
         'language' : 'زبان',
+        'main_slogan' : 'بدون جلسه ، ضربان تیمت رو بگیر',
+        'cta_button' : 'شروع رایگان'
     }
 }
 
 function applyTranslations() {
-    
+
     const elements = document.querySelectorAll('[data-i18n]');
 
     const currentLang = 'fa';
@@ -25,3 +27,4 @@ function applyTranslations() {
         }
     })
 }
+document.addEventListener('DOMContentLoaded' , applyTranslations);
