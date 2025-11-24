@@ -1,30 +1,16 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'vazir';
-    src: url(/fonts/vazir-font-v29.1.0/) format('truetype');
-}
-@font-face {
-    font-family: 'shabnam';
-    src: url(/fonts/shabnam/) format('truetype');
-}
-@font-face {
     font-family: 'sahel';
     src: url(/fonts/sahel/) format('truetype');
 }
-@font-face {
-    font-family: 'iran sans';
-    src: url(/fonts/A-Iranian-Sans/) format('truetype');
-}
-@font-face {
-    font-family: 'iran nastaliq';
-    src: url(/fonts/IranNastaliq/) format('truetype');
-}
 
-.body {
+
+
+body {
     margin: 0;
     padding: 0;
-    font-family: 'sahel', 'vazir';
+    font-family: 'sahel', sans-serif;
     background-color: #fff;
 
 }
@@ -42,7 +28,7 @@
 
 .header {
     display: flex;
-    font-family: "iran sans";
+    font-family: "sahel" , sans-serif;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
@@ -53,7 +39,7 @@
 .logo {
     font-size: 45px;
     font-family: "Inter"; 
-    color: #1B4990;
+    color: #2b4f86;
 }
 
 .nav-menu {
@@ -73,29 +59,15 @@
 
 .nav-menu ul li a {
     position: relative;
-    font-family: 'vazir' , sans-serif;
+    font-family: 'sahel' , sans-serif;
     color: #333;
     transition: color 0.3 ease;
     padding-bottom: 5px;
     font-weight: bold;
 }
 
-.nav-menu ul li a ::after {
-    content: "";
-    position: absolute;
-    bottom: 0; right: 0;
-    height: 2px; width: 0;
-    background-color: #2563EB;
-    transition: width 0.4 ease-in-out;
-    border-radius: 4px;
-}
-
 .nav-menu ul li a:hover {
-    color: #fff;
-    background-color: #2563EB;
+    color: #333;
+    background-color: #b9dffd;
     border-radius: 4px;
-}
-
-.nav-menu ul li a:hover::after{
-    width: 100%;
 }
