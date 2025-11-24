@@ -7,7 +7,10 @@ const translations ={
         'pricing' : 'قیمت گذاری' ,
         'language' : 'زبان',
         'main_slogan' : 'بدون جلسه ، ضربان تیمت رو بگیر',
-        'cta_button' : 'شروع رایگان'
+        'cta_button' : 'شروع رایگان',
+        'features-title' : 'چرا PulseCheck',
+        'feature1-title' : 'فقط 5 دقیقه',
+        'feature1-desc' : 'گزارش‌های روزانه بدون نیاز به جلسات طولانی و خسته‌کننده.'
     }
 }
 
