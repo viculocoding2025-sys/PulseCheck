@@ -72,6 +72,33 @@ body {
     border-radius: 4px;
 }
 
+/* استایل بخش بصری */
+.hero-visual {
+    margin-bottom: 30px;
+}
+
+.hero-visual i {
+    font-size: 80px; /* سایز بزرگ */
+    color: #2563EB; /* آبی برند */
+    /* اضافه کردن سایه نورانی برای جذابیت */
+    filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.4)); 
+    /* اتصال انیمیشن */
+    animation: pulse-animation 2s infinite;
+}
+
+/* تعریف انیمیشن ضربان */
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* کمی بزرگ شود */
+    }
+    100% {
+        transform: scale(1); /* به حالت اول برگردد */
+    }
+}
+
 .hero-section {
     min-height: 80vh;
     display: flex;
@@ -80,6 +107,8 @@ body {
     align-items: center;
     text-align: center;
     padding: 50px 20px;
+    background: linear-gradient(180deg, #e0f2fe 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #e0f2fe 0%, #ffffff 100%);
 }
 
 .hero-section h1 {
@@ -107,4 +136,124 @@ body {
 
 .cta_button_main:hover {
     background-color: #1e40af;
+}
+
+/* Features Section: مرکز بخش */
+.features-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa; /* کمی خاکستری روشن برای تمایز با بخش اصلی */
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 36px;
+    color: #1B4990; /* آبی عمیق */
+    margin-bottom: 40px;
+}
+
+/* Features Grid: مدیریت چیدمان */
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* فاصله بین آیتم‌ها */
+    flex-wrap: wrap; /* برای ریسپانسیو بودن */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Features Item: هر بلوک ویژگی */
+.features-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: calc(33% - 20px); /* هر آیتم حدود یک سوم عرض بگیرد */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.features-item:hover {
+    transform: translateY(-5px); /* انیمیشن کوچک هنگام هاور */
+}
+
+.features-item i {
+    font-size: 36px;
+    color: #2563EB; /* آبی قاطع (Action Blue) برای آیکون‌ها */
+    margin-bottom: 15px;
+}
+
+.features-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.features-item p {
+    color: #666;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* پس زمینه تیره برای کنتراست */
+    color: white;
+    font-size: 14px;
+}
+
+/* استایل موکاپ (پنجره نرم‌افزار) */
+.ui-mockup {
+    background: white;
+    width: 300px; /* عرض کارت */
+    height: 180px; /* ارتفاع کارت */
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* سایه نرم و عمیق */
+    margin-top: 50px; /* فاصله از دکمه */
+    overflow: hidden;
+    border: 1px solid #e1e4e8;
+    
+    /* انیمیشن معلق بودن */
+    animation: float-animation 4s ease-in-out infinite;
+}
+
+/* هدر رنگی بالای کارت (شبیه پنجره مرورگر) */
+.mockup-header {
+    background: #f1f3f5;
+    padding: 10px 15px;
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+/* خطوط داخل کارت (شبیه متن گزارش) */
+.mockup-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.line {
+    height: 8px;
+    background: #e1e4e8;
+    border-radius: 4px;
+}
+
+.w-80 { width: 80%; }
+.w-60 { width: 60%; }
+.w-40 { width: 40%; }
+
+/* انیمیشن شناور */
+@keyframes float-animation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); } /* بالا رفتن */
+    100% { transform: translateY(0px); }
 }
